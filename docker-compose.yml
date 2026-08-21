@@ -1,0 +1,7 @@
+services:
+  code-review:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${PROJECTS_ROOT:-./projects}:/projects:ro
